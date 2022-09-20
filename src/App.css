@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+.col2{
+  background-color: black;
+}
+
+.logo{
+  width: 100px;
+  border-radius: 110px;
+  margin: 20px 0 10px 20px;
+  object-fit: cover;
+}
+.logo-image{
+  width: 2em;
+}
+
+.col1{
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.ulist{
+  list-style: none;
+
+}
+
+.ulist li{
+  padding: 25px 0;
+  font-size: 23px;
+}
+
+.ulist li a{
+  text-decoration: none;
+  color:white;
+}
+
+
+.ulist li a.active{
+  color:rgb(214, 124, 39);
+  border-bottom: 1px solid rgb(214, 124, 39);
+}
+.col3{
+  background-color:black;
+}
+
+.card{
+  position: relative;
+  width: 19rem !important;
+  margin:auto !important;
+  height:400px !important;
+  background-color:black !important;
+  color:white !important;
+  box-shadow: 0px 0px 20px 0px rgba(253, 255, 255, 0.7);            
+}
+
+.card:hover{
+  box-shadow: none;
+}
+
+.modal-body span{
+  color:rgb(214, 124, 39) ;
+}
+.cardbtnn{
+  position: absolute;
+  width: 90%;
+  bottom:10px;
+  display:flex;
+  align-items:center;
+justify-content: space-between;
+}
+.wishlist-btn{
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.wishlist-btn:hover{
+  color:rgb(214, 124, 39);
+}
+
+.watchlist{
+  color :rgb(214, 124, 39);
+}
+
+.search input{
+  padding: 10px;
+  border-radius: 20px ;
+  border:none;
+  outline:none;
+}
+
+@media (max-width:769px){
+ .col1{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+ }
+ .card{
+  height: 25em !important;
+ }
+ .ulist{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+ }
+ .ulist li{
+  font-size: 16px;
+  margin-left: 1em;
+ }
+ .search{
+  padding-left: 3em;
+ }
+}
+
